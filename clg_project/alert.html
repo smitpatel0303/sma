@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 px-1 bg-dark position-fixed" id="sticky-sidebar">
+            <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+              <h3 class="Smart">Smart</h3>
+              <h3 class="Agriculture">Agriculture <i class="fa fa-leaf" aria-hidden="true"></i></h3>
+              <div class="hovers">
+                <a href="./dashboard.html" class="nav-link btn btn-dark" id="link"><i class="fa fa-tachometer"
+                    aria-hidden="true"></i> Dashboard</a>
+                <a href="./stats.html" class="nav-link btn btn-dark" id="link"><i class="fa fa-bar-chart"
+                    aria-hidden="true"></i> Stats</a>
+                <a href="./" class="nav-link btn btn-dark disabled" id="link"><i class="fa fa-exclamation-triangle"
+                    aria-hidden="true"></i> Alerts</a>
+                <a href="./profile.html" class="nav-link btn btn-dark" id="link"><i class="fa fa-user" aria-hidden="true"></i>
+                  Profile</a>
+                <a href="./logout.html" class="nav-link btn btn-dark" id="link"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                  Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 offset-3" id="main">
+            <h1 class="heading"><i class="fa fa-exclamation-triangle"aria-hidden="true"></i> Alerts</h1>
+            <br>
+            <br>
+            <br>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address for get Alert</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="contact">Contact number for get Alert</label>
+                    <input type="email" class="form-control" id="contactno" aria-describedby="emailHelp" placeholder="Enter Contact No">
+                    <small id="emailHelp" class="form-text text-muted">Enter Phone number to get alert through SMS</small>
+                  </div>
+                </form>
+          </div>
+          <div class="col-md-4" id="colm">
+                  
+            <div class="alertimg">
+            <img src="./images/alert.png" alt="">
+            </div> 
+            <h1 class="su" style="text-align: center;">&nbsp&nbspStay Updated</h1> 
+        </div>
+          </div>
+          
+</body>
+
+</html>
